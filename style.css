@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3F3F3F;
+    font-family: "Montserrat", system-ui;
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    height: 100vh;
+    padding: 20px;
+}
+
+#main__block {
+    width: 670px; /* ширина */
+    height: 460px;
+    background-color: #D7D5B0;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative; /* Это необходимо для абсолютного позиционирования изображения */
+}
+
+#bottom__text {
+    font-size: 48px;
+    font-weight: normal;
+}
+
+#currentIcon {
+    position: absolute; /* Абсолютное позиционирование, чтобы изображение оставалось в углу */
+    top: 10px; /* Отступ сверху */
+    right: 10px; /* Отступ справа */
+    width: 128px; /* Размер изображения для лучшей адаптивности */
+    height: auto;
+}
+
+#currentPhoto {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: -100px; /* Смещаем изображение вниз */
+    right: -100px; /* Смещаем изображение вправо */
+    width: 373px; /* Фиксированный размер изображения */
+    height: 311px;
+
+    z-index: 0; /* Отправляем изображение на задний план */
+    pointer-events: none; /* Изображение не будет влиять на элементы внутри */
+}
+
+#temperature {
+    margin-top: 20px;
+    font-size: 128px;
+    font-weight: normal;
+    text-align: left; /* Центрируем текст температуры */
+}
+
+#wind {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left; /* Центрируем текст */
+}
+#precipitation {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left; /* Центрируем текст */
+}
+#advice {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left; /* Центрируем текст */
+}
+
+/* адаптив */
+
+@media (max-width: 576px) {
+    #main__block {
+        width: 400px; /* ширина */
+        height: 380px;
+        border-radius: 40px;
+    }
+
+    #currentPhoto {
+        width: 130px; /* Фиксированный размер изображения */
+        height: 130px;
+        bottom: -50px; /* Смещаем изображение вниз */
+        right: -40px; /* Смещаем изображение вправо */
+    }
+
+    #currentIcon {
+        top: 10px; /* Отступ сверху */
+        right: 10px; /* Отступ справа */
+        width: 64px; /* Размер изображения для лучшей адаптивности */
+        height: 64px; /* Размер изображения для лучшей адаптивности */
+        height: auto;
+    }
+
+    #bottom__text {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    #wind {
+        font-size: 18px;
+    }
+    #precipitation {
+        font-size: 18px;
+    }
+    #advice {
+        font-size: 18px;
+    }
+    #temperature {
+        margin-top: 20px;
+        font-size: 100px;
+        font-weight: normal;
+        text-align: left; /* Центрируем текст температуры */
+    }
+}
+
+@media (min-width: 577px) {
+    #main__block {
+        width: 470px; /* ширина */
+        height: 450px;
+        border-radius: 35px;
+    }
+
+    #currentPhoto {
+        width: 230px; /* Фиксированный размер изображения */
+        height: 200px;
+        bottom: -60px; /* Смещаем изображение вниз */
+        right: -50px; /* Смещаем изображение вправо */
+    }
+
+    #currentIcon {
+        top: 10px; /* Отступ сверху */
+        right: 10px; /* Отступ справа */
+        width: 80px; /* Размер изображения для лучшей адаптивности */
+        height: 80px; /* Размер изображения для лучшей адаптивности */
+    }
+
+    #bottom__text {
+        font-size: 40px;
+        font-weight: normal;
+    }
+    #wind {
+        font-size: 20px;
+    }
+    #precipitation {
+        font-size: 20px;
+    }
+    #advice {
+        font-size: 20px;
+    }
+    #temperature {
+        margin-top: 20px;
+        font-size: 128px;
+        font-weight: normal;
+        text-align: left; /* Центрируем текст температуры */
+    }
+}
+
+@media (min-width: 768px) {
+    #main__block {
+        width: 600px; /* ширина */
+        height: 450px;
+        border-radius: 30px;
+    }
+
+    #currentPhoto {
+        width: 290px; /* Фиксированный размер изображения */
+        height: 250px;
+        bottom: -100px; /* Смещаем изображение вниз */
+        right: -80px; /* Смещаем изображение вправо */
+    }
+
+    #currentIcon {
+        top: 10px; /* Отступ сверху */
+        right: 10px; /* Отступ справа */
+        width: 128px; /* Размер изображения для лучшей адаптивности */
+        height: 128px; /* Размер изображения для лучшей адаптивности */
+    }
+
+    #bottom__text {
+        font-size: 40px;
+        font-weight: normal;
+    }
+
+    #temperature {
+        margin-top: 20px;
+        font-size: 128px;
+        font-weight: normal;
+        text-align: left; /* Центрируем текст температуры */
+    }
+    #wind {
+        font-size: 24px;
+    }
+    #precipitation {
+        font-size: 24px;
+    }
+    #advice {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 393px) {
+    #main__block {
+        width: max-content; /* ширина */
+        height: 400px;
+        border-radius: 30px;
+    }
+
+    #currentPhoto {
+        width: 150px; /* Фиксированный размер изображения */
+        height: 150px;
+        bottom: -50px; /* Смещаем изображение вниз */
+        right: -30px; /* Смещаем изображение вправо */
+    }
+
+    #bottom__text {
+        font-size: 30px;
+        font-weight: normal;
+    }
+
+    #temperature {
+        margin-top: 20px;
+        font-size: 64px;
+        font-weight: normal;
+        text-align: left; /* Центрируем текст температуры */
+    }
+    #wind {
+        font-size: 18px;
+    }
+    #precipitation {
+        font-size: 18px;
+    }
+    #advice {
+        font-size: 18px;
+    }
+}
+
+#city {
+    top: 5%;
+    position: absolute;
+    margin: 0 auto;
+    color: #D7D5B0;
+    font-size: 24px;
+    font-weight: normal;
+    border: 3px solid #D7D5B0;
+    border-radius: 10px;
+}
+
+#main__block, #currentPhoto, #currentIcon {
+    transition: all 0.3s ease;
+}
