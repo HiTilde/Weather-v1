@@ -9,7 +9,7 @@ fetch(apiUrl)
             throw new Error(`Ошибка: ${response.statusText}`);
         }
         return response.json();
-    })
+    }) 
     .then(data => {
         console.log(data);
 
