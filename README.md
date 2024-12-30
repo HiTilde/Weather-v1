@@ -1,1 +1,1 @@
- 
+Hello everyone. This is my “first” project on GitHub. Everyone is welcome to edit.
