@@ -2,4 +2,4 @@ Hello everyone. This is my “first” project on GitHub. Everyone is welcome to
 
 Thx for refactoring and fix errs:
 
-Thx Oleksandr gitHub - https://github.com/oleksandrshtonda
+Thx Oleksandr! gitHub - https://github.com/oleksandrshtonda
