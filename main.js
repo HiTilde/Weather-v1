@@ -1,5 +1,5 @@
 const apiKey = 'bd043c8adbde6775ab61679575b44740'; // Замените на свой реальный API ключ
-const city = 'Nitra'; 
+const city = 'Teplice'; 
 
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 

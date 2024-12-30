@@ -1,0 +1,16 @@
+{
+  "name": "weather-v3-responsive",
+  "version": "1.0.0",
+  "description": "My responsive weather project",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "MIT"
+}
