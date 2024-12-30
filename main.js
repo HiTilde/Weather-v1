@@ -1,5 +1,5 @@
 const apiKey = 'bd043c8adbde6775ab61679575b44740'; // Замените на свой реальный API ключ
-const city = 'Teplice'; 
+const city = prompt("Enter your city name: ", 'City name'); 
 
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
